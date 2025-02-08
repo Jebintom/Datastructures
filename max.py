@@ -1,6 +1,16 @@
+//?? Find the max sum of the array from the element and return the subarray aslo
+eg: [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+Max Sum: 6
+All Subarrays: [4, -1, 2, 1]
+
+
+
+
 def allMaxSubArrays(nums):
     current_sum=0
     max_sum=nums[0]
+    start=0
+    end=0
     for i in range(len(nums)):
         if current_sum<0:
             current_sum=0
